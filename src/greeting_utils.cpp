@@ -16,10 +16,10 @@ namespace GreetingUtils {
     char* format_as_c_string(const string &msg) {
         char* parray = new char[msg.size()+1];
 
-        for (int i=0; i < msg.size()+1; i++) {
+        for (int i=0; i < msg.size(); i++) {
             parray[i] = msg[i];
         }
-        parray[msg.size()+1] = '\0';
+        parray[msg.size()] = '\0';
         return parray;
     }
 }
